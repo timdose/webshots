@@ -1,0 +1,60 @@
+project_name: SpaceJam
+
+
+subpages:
+  - name: 0.0_Space_Jam_Home
+    url: http://www2.warnerbros.com/spacejam/movie/jam.htm
+  - name: 1.0_Jam_Central
+    url: http://www2.warnerbros.com/spacejam/movie/cmp/jamcentral/jamcentralframes.html
+    subpages:
+      - name: 1.1_The_Filmmakers
+        url: http://www2.warnerbros.com/spacejam/movie/cmp/jamcentral/filmmakersframes.html
+      - name: 1.2_Production_Notes
+        url: http://www2.warnerbros.com/spacejam/movie/cmp/jamcentral/prodnotesframes.html
+      - name: 1.3_Photos_from_the_Film
+        url: http://www2.warnerbros.com/spacejam/movie/cmp/jamcentral/photosframes.html
+      - name: 1.4_The_Trailer
+        url: http://www2.warnerbros.com/spacejam/movie/cmp/jamcentral/trailerframes.html
+
+  - name: 2.0_Behind_the_Jam
+    url: http://www2.warnerbros.com/spacejam/movie/cmp/behind/behindframes.html
+    subpages:
+      - name: 2.1_Character_Development
+        url: http://www2.warnerbros.com/spacejam/movie/cmp/behind/chardevelopmentframes.html
+      - name: 2.2_Animaiton_Sketches
+        url: http://www2.warnerbros.com/spacejam/movie/cmp/behind/sketchesframes.html
+      - name: 2.3_Behind_the_Scenes_Footage
+        url: http://www2.warnerbros.com/spacejam/movie/cmp/behind/brollframes.html 
+      - name: 2.4_Tech_Notes
+        url: http://www2.warnerbros.com/spacejam/movie/cmp/behind/techframes.html
+
+  - name: 3.0_Junior_Jam
+    url: http://www2.warnerbros.com/spacejam/movie/cmp/junior/juniorframes.html
+    subpages:
+      - name: 3.1_The_Coloring_Book
+        url: http://www2.warnerbros.com/spacejam/movie/cmp/junior/coloringframes.html
+      - name: 3.2_Meet_the_Characters
+        url: http://www2.warnerbros.com/spacejam/movie/cmp/junior/juniorbiosframes.html
+      - name: 3.3_Basketball_Tips_and_Terms
+        url: http://www2.warnerbros.com/spacejam/movie/cmp/junior/bballtipsframes.html
+      - name: 3.4_Neat_Stuff_to_Look_At
+        url: http://www2.warnerbros.com/spacejam/movie/cmp/junior/neatstuffframes.html
+      - name: 3.5_Games
+        url: http://www2.warnerbros.com/spacejam/movie/cmp/junior/gamesframes.html
+
+  - name: 4.0_The_Lineup
+    url: http://www2.warnerbros.com/spacejam/movie/cmp/lineup/lineupframes.html
+    subpages:
+      - name: 4.1_Loony_Toons_Bios
+        url: http://www2.warnerbros.com/spacejam/movie/cmp/lineup/looneybiosframes.html
+      - name: 4.1_Player_Bios
+        url: http://www2.warnerbros.com/spacejam/movie/cmp/lineup/playerbiosframes.html
+      - name: 4.2_Cast_Bios
+        url: http://www2.warnerbros.com/spacejam/movie/cmp/lineup/castbiosframes.html
+      - name: 4.3_The_Bad_Guys
+        url: http://www2.warnerbros.com/spacejam/movie/cmp/lineup/badguysframes.html
+      - name: 4.4_Trivia_Quiz 
+        url: http://www2.warnerbros.com/spacejam/movie/cmp/lineup/quizframes.html
+
+  - name: 5.0_Lunar_Toons
+    url: http://www2.warnerbros.com/spacejam/movie/cmp/tunes/tunesframes.html
