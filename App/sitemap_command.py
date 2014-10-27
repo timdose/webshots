@@ -71,11 +71,11 @@ class SitemapCommand:
 
 
     def sitemapper( self, pages, prefix):
-        if not 'subpages' in pages:
+        if not 'pages' in pages:
             return 0
-        for page in pages['subpages']:
+        for page in pages['pages']:
             folder = os.path.join( prefix, page['name'] )
             if 'url' in page:
                 self.handle_url( page, folder )
-            if 'subpages' in page:
+            if 'pages' in page:
                 self.sitemapper( page, folder )

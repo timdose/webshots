@@ -1,6 +1,5 @@
 #!/usr/bin/python
 import argparse
-from App.screenshots_command import ScreenshotsCommand
 from App.sitemap_command import SitemapCommand
 
 def dispatch(args):

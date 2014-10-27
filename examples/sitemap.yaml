@@ -1,12 +1,12 @@
 project_name: SpaceJam
 
 
-subpages:
+pages:
   - name: 0.0_Space_Jam_Home
     url: http://www2.warnerbros.com/spacejam/movie/jam.htm
   - name: 1.0_Jam_Central
     url: http://www2.warnerbros.com/spacejam/movie/cmp/jamcentral/jamcentralframes.html
-    subpages:
+    pages:
       - name: 1.1_The_Filmmakers
         url: http://www2.warnerbros.com/spacejam/movie/cmp/jamcentral/filmmakersframes.html
       - name: 1.2_Production_Notes
@@ -18,7 +18,7 @@ subpages:
 
   - name: 2.0_Behind_the_Jam
     url: http://www2.warnerbros.com/spacejam/movie/cmp/behind/behindframes.html
-    subpages:
+    pages:
       - name: 2.1_Character_Development
         url: http://www2.warnerbros.com/spacejam/movie/cmp/behind/chardevelopmentframes.html
       - name: 2.2_Animaiton_Sketches
@@ -30,7 +30,7 @@ subpages:
 
   - name: 3.0_Junior_Jam
     url: http://www2.warnerbros.com/spacejam/movie/cmp/junior/juniorframes.html
-    subpages:
+    pages:
       - name: 3.1_The_Coloring_Book
         url: http://www2.warnerbros.com/spacejam/movie/cmp/junior/coloringframes.html
       - name: 3.2_Meet_the_Characters
@@ -44,7 +44,7 @@ subpages:
 
   - name: 4.0_The_Lineup
     url: http://www2.warnerbros.com/spacejam/movie/cmp/lineup/lineupframes.html
-    subpages:
+    pages:
       - name: 4.1_Loony_Toons_Bios
         url: http://www2.warnerbros.com/spacejam/movie/cmp/lineup/looneybiosframes.html
       - name: 4.1_Player_Bios
