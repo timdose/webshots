@@ -1,15 +1,16 @@
 #!/usr/bin/python
 import argparse
 from App.sitemap_command import SitemapCommand
+from App.urls_command import UrlsCommand
 
 def dispatch(args):
   runner_class = args.runner
   constructor = globals()[runner_class]
   runner = constructor( args )
-  if args.limit > 0:
-    runner.set_max_permutations(args.limit)
+  # if args.limit > 0:
+  #   runner.set_max_permutations(args.limit)
   
-parser = argparse.ArgumentParser(description='QA tools for website production')
+parser = argparse.ArgumentParser(description='Website screenshot tools')
 subparsers = parser.add_subparsers(help='subcommand help')
 
 parser_screenshot = subparsers.add_parser('sitemap', help='Take screenshots of a site defined by sitemap YAML.')
@@ -18,6 +19,14 @@ parser_screenshot.add_argument('destination', help='path to destination folder f
 parser_screenshot.add_argument('-l', '--limit', dest='limit', help='only take the first N screenshots')
 parser_screenshot.add_argument('-v', '--verbose', action="store_true", help='verbose output')
 parser_screenshot.set_defaults(runner="SitemapCommand")
+
+parser_screenshot = subparsers.add_parser('urls', help='Take screenshots of a site defined by a list of urls in YAML.')
+parser_screenshot.add_argument('config_file', help='path to YAML config file that defines the urls')
+parser_screenshot.add_argument('destination', help='path to destination folder for screenshots')
+# parser_screenshot.add_argument('-l', '--limit', dest='limit', help='only take the first N screenshots')
+parser_screenshot.add_argument('-v', '--verbose', action="store_true", help='verbose output')
+parser_screenshot.set_defaults(runner="UrlsCommand")
+
 
 args = parser.parse_args()
 dispatch( args )

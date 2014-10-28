@@ -4,7 +4,7 @@ import yaml
 from datetime import datetime
 from selenium import webdriver
 
-class ScreenshotsCommand:
+class UrlsCommand:
     def __init__(self, args):
         self.args = args
         self.start_time = None
@@ -12,11 +12,13 @@ class ScreenshotsCommand:
     
         self.config = yaml.load(file(args.config_file))
 
-        self.output_folder = os.path.join( args.screenshot_destination, self.get_timestamp() )
+        self.output_folder = os.path.join( args.destination, self.get_timestamp() )
         
         self.urls = self.config['urls']
         
         self.max_permutations = len(self.urls)
+
+        self.go()
         
     
     def set_max_permutations(self, max ):
@@ -53,7 +55,7 @@ class ScreenshotsCommand:
         
 
     def get_screenshot_filename_from_url( self, url ):
-        return url.replace('http://localhost:8000/', '').replace('/','__') + '.png'
+        return url.replace('http://', '').replace('https://', '').replace('/','__') + '.png'
 
 
     def get_timestamp(self):
