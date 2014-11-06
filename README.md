@@ -52,7 +52,7 @@ To test this out on a Mac, you could try the following command:
 
 ### The `sitemap` command 
 
-- You'll need to pass in a YAML file defining the urls. An example is located in conf/sitemap.yaml
+- You'll need to pass in a YAML file defining the urls and folder structure. An example is located in conf/sitemap.yaml
 - Take screenshots with the following commmand:
   - `webshots sitemap config_file output_folder`
     - **config_file:** path to yaml config file.
