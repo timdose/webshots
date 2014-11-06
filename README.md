@@ -1,7 +1,7 @@
 Webshots
 ========
 
-This is a working prototype type of a simple command line utility to take screenshots of lists of urls.
+Webshots is a prototype of a simple command line utility to take screenshots of lists of urls.
 
 
 
