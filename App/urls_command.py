@@ -16,16 +16,14 @@ class UrlsCommand:
         
         self.urls = self.config['urls']
         
-        self.max_permutations = len(self.urls)
-
-        self.go()
+        self.max_screenshots = len(self.urls)
         
     
-    def set_max_permutations(self, max ):
-        self.max_permutations = int(max);
+    def set_max_screenshots(self, max ):
+        self.max_screenshots = int(max);
 
     
-    def go(self):
+    def execute(self):
         self.start_time = datetime.now()
         self.take_screenshots( self.urls, self.output_folder )
         self.report_completion()
@@ -38,7 +36,7 @@ class UrlsCommand:
         driver = webdriver.Firefox()
         driver.set_window_size( 1200, 700 );
 
-        for url in urls[0:self.max_permutations]:
+        for url in urls[0:self.max_screenshots]:
             screenshot_name = self.get_screenshot_filename_from_url( url )
             screenshot_dest = os.path.join( output_folder, screenshot_name )
             
@@ -65,4 +63,4 @@ class UrlsCommand:
         
     def report_completion(self):
         time_elapsed = datetime.now() - self.start_time
-        print 'took screenshots of ' + str(self.max_permutations) + ' permutations in ' + str(time_elapsed)
+        print 'took screenshots of ' + str(self.max_screenshots) + ' urls in ' + str(time_elapsed)
