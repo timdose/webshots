@@ -27,8 +27,8 @@ Webshots commands take the following format:
 
 `webshots command_name config_file output_folder`
 
-    - **config_file:** path to yaml config file.
-    - **output_folder:** path to output folder (e.g., ~/Downloads)
+- **config_file:** path to yaml config file.
+- **output_folder:** path to output folder (e.g., ~/Downloads)
 
 
 Currently there are two commands available
