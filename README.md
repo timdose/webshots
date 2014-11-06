@@ -1,7 +1,7 @@
 Webshots
 ========
 
-This takes screenshots of a sitemap and places them in a hierarchical folder structure.
+This is a working prototype type of a simple command line utility to take screenshots of lists of urls.
 
 
 
